@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivam Kumar — QA Intern & Full Stack Developer. React, Node.js, TypeScript, Playwright, MERN, and RAG-powered apps." />
+  <title>Shivam Kumar — Full Stack / QA Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">SK</span>
+      <span class="brand-name">shivam.dev</span>
+    </div>
+    <nav class="topnav">
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary topbar-cta" href="assets/Shivam_Kumar_Resume.pdf" download>Resume ↓</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </header>
+
+  <div class="desktop">
+    <div class="grid-overlay"></div>
+    <div class="blob blob-violet"></div>
+    <div class="blob blob-cyan"></div>
+
+    <!-- Left dock -->
+    <nav class="dock dock-left" aria-label="Section navigation">
+      <button class="dock-item" data-target="#hero"><span class="dock-icon">🏠</span>Home</button>
+      <button class="dock-item" data-target="#about"><span class="dock-icon">🙋</span>About</button>
+      <button class="dock-item" data-target="#stack"><span class="dock-icon">🧰</span>Stack</button>
+      <button class="dock-item" data-target="#projects"><span class="dock-icon">🗂️</span>Builds</button>
+      <button class="dock-item" data-target="#experience"><span class="dock-icon">💼</span>Work</button>
+      <button class="dock-item" data-target="#skills"><span class="dock-icon">🧪</span>QA</button>
+    </nav>
+
+    <!-- Right dock -->
+    <nav class="dock dock-right" aria-label="Social links">
+      <a class="dock-item" href="https://github.com/shivam9473" target="_blank" rel="noopener"><span class="dock-icon">🐙</span>GitHub</a>
+      <a class="dock-item" href="https://www.linkedin.com/in/shivam-singh-950065252/" target="_blank" rel="noopener"><span class="dock-icon">💼</span>LinkedIn</a>
+      <a class="dock-item" href="mailto:shivamk38812@gmail.com"><span class="dock-icon">✉️</span>Email</a>
+      <a class="dock-item" href="assets/Shivam_Kumar_Resume.pdf" download><span class="dock-icon">📄</span>Resume</a>
+      <button class="dock-item" id="recycleIcon"><span class="dock-icon">♻️</span>Bin</button>
+    </nav>
+
+    <main class="canvas">
+
+      <!-- Hero -->
+      <section class="window hero-window" id="hero" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">~/ profile.sh</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize" aria-label="Minimize">–</button>
+            <button class="win-btn win-close" data-action="close" aria-label="Close">×</button>
+          </div>
+        </div>
+        <div class="window-body hero-body">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="dot-live"></span> cse student · qa intern · vaishali, bihar</p>
+            <h1>Code that ships.<br><span class="highlight">Tests that catch.</span></h1>
+            <p class="hero-sub">
+              I'm <strong>Shivam Kumar</strong>, a CSE student and QA intern at Toba Tech Solution with hands-on
+              experience in <strong>manual testing, API validation, Playwright automation, and Jira workflows</strong>.
+              I also build full-stack MERN apps, REST APIs with RBAC, and AI-powered RAG document systems —
+              with a quality-first, detail-oriented approach.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">See builds</a>
+              <a class="btn btn-ghost" href="assets/Shivam_Kumar_Resume.pdf" download>Resume ↓</a>
+            </div>
+          </div>
+          <div class="hero-terminal">
+            <div class="terminal-head">
+              <span class="t-dot t-red"></span><span class="t-dot t-yellow"></span><span class="t-dot t-green"></span>
+              <span class="terminal-path">zsh — shivam@portfolio</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="out">shivam-kumar · full-stack · qa · typescript</p>
+              <p><span class="prompt">$</span> cat stack.txt</p>
+              <p class="out">React · Node.js · Playwright · MERN · RAG · Jira</p>
+              <p><span class="prompt">$</span> npm run test && npm run ship</p>
+              <p class="out">✓ 42 passed · deploying…</p>
+              <p><span class="prompt">$</span> <span class="caret">_</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="window" id="about" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">about.md</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize">–</button>
+            <button class="win-btn win-close" data-action="close">×</button>
+          </div>
+        </div>
+        <div class="window-body about-body">
+          <div class="avatar-wrap">
+            <div class="avatar-placeholder">
+              <span>&lt;/&gt;</span>
+              <small>dev + qa</small>
+            </div>
+          </div>
+          <div>
+            <h2>A CSE student who builds and breaks software</h2>
+            <p>
+              QA Intern and Computer Science Engineering student with hands-on experience in
+              <strong>manual testing, API testing, bug reporting, Jira workflows, and Playwright
+              automation</strong>. Also skilled in full-stack MERN development, REST API design,
+              authentication, RBAC, transactional data consistency, and AI-powered document (RAG) workflows.
+            </p>
+            <p>
+              Side projects include a fault-tolerant payment ledger, a healthcare platform with
+              real-time chat, an AI PDF chat app with Pinecone embeddings, and SDET automation
+              frameworks with Selenium, TestNG, and GitHub Actions.
+            </p>
+            <ul class="fact-strip">
+              <li><strong>8.15</strong> CGPA</li>
+              <li><strong>QA Intern</strong> @ Toba Tech</li>
+              <li><strong>B.Tech CSE</strong> @ GITS Udaipur</li>
+              <li><strong>2027</strong> expected graduation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stack -->
+      <section class="window" id="stack" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">stack.yaml</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize">–</button>
+            <button class="win-btn win-close" data-action="close">×</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h2>Tools in my daily workflow</h2>
+          <p class="section-sub">From feature branches to green CI — this is what I actually use.</p>
+          <div class="stack-grid">
+            <div class="stack-group">
+              <h3>Languages</h3>
+              <div class="pill-row">
+                <span class="pill pill-accent">TypeScript</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Java</span>
+                <span class="pill">C / C++</span>
+                <span class="pill">HTML / CSS</span>
+              </div>
+            </div>
+            <div class="stack-group">
+              <h3>Frontend</h3>
+              <div class="pill-row">
+                <span class="pill pill-accent">React 19</span>
+                <span class="pill">React.js</span>
+                <span class="pill">Vite</span>
+                <span class="pill">Responsive UI</span>
+              </div>
+            </div>
+            <div class="stack-group">
+              <h3>Backend &amp; APIs</h3>
+              <div class="pill-row">
+                <span class="pill pill-accent">Node.js</span>
+                <span class="pill">Express.js</span>
+                <span class="pill">Fastify</span>
+                <span class="pill">REST APIs</span>
+                <span class="pill">RBAC</span>
+              </div>
+            </div>
+            <div class="stack-group">
+              <h3>Databases &amp; AI</h3>
+              <div class="pill-row">
+                <span class="pill">PostgreSQL</span>
+                <span class="pill">MongoDB</span>
+                <span class="pill">MySQL</span>
+                <span class="pill pill-accent">Pinecone</span>
+                <span class="pill">RAG / Embeddings</span>
+              </div>
+            </div>
+            <div class="stack-group">
+              <h3>Testing &amp; QA</h3>
+              <div class="pill-row">
+                <span class="pill pill-accent">Playwright</span>
+                <span class="pill">Manual Testing</span>
+                <span class="pill">API Testing</span>
+                <span class="pill">Selenium</span>
+                <span class="pill">TestNG</span>
+                <span class="pill">Jira</span>
+              </div>
+            </div>
+            <div class="stack-group">
+              <h3>DevOps &amp; Tools</h3>
+              <div class="pill-row">
+                <span class="pill">Docker</span>
+                <span class="pill">Render</span>
+                <span class="pill">Vercel</span>
+                <span class="pill pill-accent">Git / GitHub</span>
+                <span class="pill">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="window" id="projects" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">builds/</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize">–</button>
+            <button class="win-btn win-close" data-action="close">×</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h2>Featured builds</h2>
+          <p class="section-sub">Three projects — backend correctness, healthcare MERN, and AI document chat.</p>
+          <div class="project-list">
+
+            <article class="project-card">
+              <p class="project-tag">01 · Backend</p>
+              <h3>Fault-Tolerant Payment Ledger</h3>
+              <p class="project-tagline">Idempotent transfer API — correctness under retries &amp; concurrency</p>
+              <ul class="project-points">
+                <li>Fault-tolerant money transfer REST API with durable <code>Idempotency-Key</code> storage and SHA-256 request fingerprints.</li>
+                <li>Concurrency safety via <code>SELECT…FOR UPDATE</code> row locking, lexical lock ordering, and atomic debit/credit in one PostgreSQL transaction.</li>
+                <li>React 19 + Vite ledger console (dashboard, transfer, activity, accounts) with paginated activity and problem+json errors.</li>
+                <li>Docker Compose packaging; deployable to Render (API + DB) and Vercel/Netlify (UI).</li>
+              </ul>
+              <div class="project-footer">
+                <div class="pill-row">
+                  <span class="pill pill-sm">Fastify</span>
+                  <span class="pill pill-sm">PostgreSQL</span>
+                  <span class="pill pill-sm">React 19</span>
+                  <span class="pill pill-sm">Docker</span>
+                </div>
+                <div class="project-links">
+                  <a class="btn btn-ghost btn-sm" href="https://github.com/shivam9473/Fault-toleant-payment" target="_blank" rel="noopener">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">02 · Full Stack</p>
+              <h3>HealthSync</h3>
+              <p class="project-tagline">Healthcare platform with RBAC, appointments &amp; real-time consultations</p>
+              <ul class="project-points">
+                <li>Built authentication and role-based access control (RBAC) for admin and patient users.</li>
+                <li>Appointment booking, cancellation, and doctor availability management workflows.</li>
+                <li>Real-time chat and video consultation for remote patient-doctor interaction.</li>
+                <li>Image and PDF file-sharing for medical reports, prescriptions, and consultation records.</li>
+              </ul>
+              <div class="project-footer">
+                <div class="pill-row">
+                  <span class="pill pill-sm">React</span>
+                  <span class="pill pill-sm">Node.js</span>
+                  <span class="pill pill-sm">MongoDB</span>
+                  <span class="pill pill-sm">RBAC</span>
+                </div>
+                <div class="project-links">
+                  <a class="btn btn-ghost btn-sm" href="https://github.com/shivam9473/HealthSync" target="_blank" rel="noopener">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">03 · AI / Full Stack</p>
+              <h3>DocuGenius</h3>
+              <p class="project-tagline">AI PDF chat app — RAG-powered Q&amp;A over uploaded documents</p>
+              <ul class="project-points">
+                <li>Full-stack MERN app that lets users chat with PDF documents using AI.</li>
+                <li>Retrieval-Augmented Generation (RAG): extract, chunk, embed, and retrieve PDF content for context-aware answers.</li>
+                <li>Embeddings stored in Pinecone for fast similarity search; LLM APIs generate grounded responses.</li>
+                <li>End-to-end document upload → embedding pipeline → conversational Q&amp;A interface.</li>
+              </ul>
+              <div class="project-footer">
+                <div class="pill-row">
+                  <span class="pill pill-sm">React</span>
+                  <span class="pill pill-sm">Node.js</span>
+                  <span class="pill pill-sm">Pinecone</span>
+                  <span class="pill pill-sm">RAG</span>
+                </div>
+                <div class="project-links">
+                  <a class="btn btn-ghost btn-sm" href="https://github.com/shivam9473" target="_blank" rel="noopener">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="window" id="experience" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">work.log</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize">–</button>
+            <button class="win-btn win-close" data-action="close">×</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div>
+                <div class="timeline-head">
+                  <h3>QA Intern — Toba Tech Solution</h3>
+                  <span class="timeline-date">May 2026 – Present</span>
+                </div>
+                <ul class="project-points">
+                  <li>Performed <strong>manual testing</strong> of web application features — functionality, UI flow, usability, and expected user behavior.</li>
+                  <li>Tested <strong>REST APIs</strong> using request/response validation, status code checks, payload verification, and error scenario coverage.</li>
+                  <li>Explored and built <strong>Playwright automation tests in TypeScript</strong> — test structure, browser actions, selectors, and E2E flow design.</li>
+                  <li>Used <strong>Jira</strong> to track bugs, update task status, document issues clearly, and coordinate QA feedback with the development team.</li>
+                  <li>Prepared test cases, reported defects with clear reproduction steps, and supported <strong>regression testing</strong> after fixes and feature updates.</li>
+                  <li>Also contributed to full-stack development with <strong>React, Node.js, TypeScript, and Express.js</strong> — UI components, API integrations, auth workflows, and CI/CD via GitHub Actions.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- QA Skills highlight -->
+      <section class="window" id="skills" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">qa-suite/</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize">–</button>
+            <button class="win-btn win-close" data-action="close">×</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h2>Quality engineering mindset</h2>
+          <p class="section-sub">I don't just write code — I make sure it works before it merges.</p>
+          <div class="qa-grid">
+            <div class="qa-card">
+              <span class="qa-icon">🔍</span>
+              <h3>Manual Testing</h3>
+              <p>Functional, regression, integration, and E2E test cycles with structured defect reporting in Jira.</p>
+            </div>
+            <div class="qa-card">
+              <span class="qa-icon">🎭</span>
+              <h3>Playwright E2E</h3>
+              <p>TypeScript automation for critical user journeys — fast, reliable, CI-integrated.</p>
+            </div>
+            <div class="qa-card">
+              <span class="qa-icon">🤖</span>
+              <h3>Selenium Frameworks</h3>
+              <p>Page Object Model, parallel TestNG, Allure reports, Docker Grid for cross-browser runs.</p>
+            </div>
+            <div class="qa-card">
+              <span class="qa-icon">⚡</span>
+              <h3>CI/CD Integration</h3>
+              <p>GitHub Actions pipelines with automated checks — tests gate every merge.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="window" id="education" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">study.yml</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize">–</button>
+            <button class="win-btn win-close" data-action="close">×</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h2>Education</h2>
+          <div class="edu-list">
+            <div class="edu-card">
+              <div>
+                <h3>Geetanjali Institute of Technical Studies, Udaipur</h3>
+                <p class="dim">B.Tech — Computer Science and Engineering</p>
+              </div>
+              <div class="edu-meta">
+                <span class="pill">Jul 2023 – Present</span>
+                <span class="pill pill-accent">CGPA 8.15</span>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div>
+                <h3>Indraprastha International Secondary School, Muzaffarpur</h3>
+                <p class="dim">12th Grade (CBSE)</p>
+              </div>
+              <div class="edu-meta">
+                <span class="pill">2022</span>
+                <span class="pill pill-accent">68.2%</span>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div>
+                <h3>Kendriya Vidyalaya Gannipur School, Muzaffarpur</h3>
+                <p class="dim">10th Grade (CBSE)</p>
+              </div>
+              <div class="edu-meta">
+                <span class="pill">2020</span>
+                <span class="pill pill-accent">66.2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="window" id="contact" data-window>
+        <div class="window-titlebar">
+          <span class="window-title">reach.sh</span>
+          <div class="window-controls">
+            <button class="win-btn" data-action="minimize">–</button>
+            <button class="win-btn win-close" data-action="close">×</button>
+          </div>
+        </div>
+        <div class="window-body">
+          <h2>Let's talk</h2>
+          <p class="section-sub">Open to QA intern, full-stack, and SDET roles. Based in Vaishali, Bihar.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:shivamk38812@gmail.com">✉️ shivamk38812@gmail.com</a>
+            <a class="contact-link" href="tel:+917482975394">📞 +91 74829 75394</a>
+            <a class="contact-link" href="https://github.com/shivam9473" target="_blank" rel="noopener">🐙 github.com/shivam9473</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/shivam-singh-950065252/" target="_blank" rel="noopener">💼 LinkedIn</a>
+            <a class="contact-link" href="assets/Shivam_Kumar_Resume.pdf" download>📄 Download résumé</a>
+          </div>
+        </div>
+        <footer class="site-footer">
+          <span>© <span id="year"></span> Shivam Kumar. Built from scratch — dev + QA edition.</span>
+        </footer>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Recycle bin easter egg -->
+  <div class="trash-modal" id="recycleModal">
+    <div class="trash-modal-inner">
+      <button class="win-btn win-close" id="recycleClose" aria-label="Close">×</button>
+      <span class="mono">$ rm -rf ./flaky-tests</span>
+      <p>Nothing here. I keep flaky tests in quarantine — not the recycle bin. Ask me about the time a race condition passed CI twice.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
